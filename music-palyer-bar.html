@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .bar {
+            height: 100px;
+            background: lightgray;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .music-info {
+
+            width: 20%;
+            height: 80%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        .music-info>div {
+            height: 100%;
+            width: 30%;
+        }
+
+        .progress {
+
+            width: 40%;
+            height: 80%;
+            /* border: 1px solid black; */
+
+
+        }
+
+        .music-controls {
+
+            width: 20%;
+            height: 80%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+        .music-controls>span {
+            display: flex;
+            width: 24%;
+            justify-content: space-between;
+        }
+
+        .music-controls  i {
+            font-size: 24px;
+        }
+
+        .music-name {
+            display: flex;
+            align-items: center;
+        }
+
+        .progress-control {
+
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 24px;
+            width: 80%;
+            margin: auto;
+
+        }
+
+        .progress-bar {
+
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .progress-bar>input {
+            display: inline-block;
+            width: 90%;
+        }
+
+        .progress>span {
+            color: lightslategray;
+            margin: 0 10px
+        }
+        .likes-div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bar">
+        <div class="music-info">
+
+            <div>
+                <img src="./music-img.jpeg" height="80px" width="80px" />
+            </div>
+            <div class="music-name">
+                <span>
+                    Cold Play
+                </span>
+            </div>
+            <div class="likes-div">
+
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-thumbs-down"></i>
+
+            </div>
+
+        </div>
+
+        <div class="progress">
+
+            <div class="progress-control">
+
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-solid fa-circle-play"></i>
+                <i class="fa-solid fa-forward"></i>
+                <i class="fa-solid fa-shuffle"></i>
+
+            </div>
+
+            <div class="progress-bar">
+                <span>00:00</span>
+                <input type="range" min="0" max="100" />
+                <span>10:00</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="music-controls">
+
+            <span>
+                <img src="./playlist.png" height="24px" width="24px" />
+                <!-- <i class="fa-solid fa-computer-speaker"></i> -->
+                <i class="fa-solid fa-volume-high"></i>
+            </span>
+            <div class="sound-bar">
+
+                <input type="range" max="100" min="0" />
+
+            </div>
+
+            <!-- <i class="fa-solid fa-arrows-maximize"></i> -->
+
+        </div>
+    </div>
+
+</body>
+
+</html>
