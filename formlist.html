@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <form onsubmit="onFormSubmit(event)">
+        <input type="text"  onkeyup="nameHandler(event)"  />
+        <input type="email"  onkeyup="emailHandler(event)"  />
+        <input type="submit" name="Submit" />
+    </form>
+
+    <h1>
+        List
+    </h1>
+
+    <ul id="list" >
+
+    </ul>
+
+
+    <script>
+
+        let userName = ''
+        let userEmail = ''
+
+        function nameHandler(event) {
+            userName = event.target.value
+        }
+
+        function emailHandler(event) {
+            userEmail = event.target.value
+        }
+
+        function onFormSubmit(event) {
+            event.preventDefault()
+            const userList = document.getElementById("list");
+            const liElement = document.createElement("li");
+            liElement.innerText = userName + " " + userEmail
+            userList.append(liElement)
+        }
+
+
+    </script>
+
+</body>
+</html>
